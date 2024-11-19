@@ -20,7 +20,7 @@ And the last one contains a provider for Open Telemetry:
 <dd>Provider for integration with Open Telemetry</dd>
 <dl>
 Visit any of the links above to learn about providers which are available for 
-a particular platform.
+a particular platform
 
 ## General Information
 
