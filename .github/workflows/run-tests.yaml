@@ -114,6 +114,13 @@ jobs:
           echo -e "GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION=${{ secrets.TEST_GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION}}\n
           " >> ojdbc-provider-gcp/test.properties
 
+      - name: Debug GCP Config File
+        run: |
+          echo "Contents of config.json:"
+          cat $HOME/.gcp/config.json
+          echo "Validation result:"
+          jq . $HOME/.gcp/config.json
+
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
 
