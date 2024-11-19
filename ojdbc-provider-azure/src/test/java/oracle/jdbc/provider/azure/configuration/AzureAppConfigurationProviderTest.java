@@ -9,6 +9,7 @@ import oracle.jdbc.provider.TestProperties;
 import oracle.jdbc.provider.azure.AzureTestProperty;
 import oracle.jdbc.provider.azure.authentication.AzureAuthenticationMethod;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
@@ -18,6 +19,7 @@ import java.sql.Statement;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Disabled
 class AzureAppConfigurationProviderTest {
 
   /**

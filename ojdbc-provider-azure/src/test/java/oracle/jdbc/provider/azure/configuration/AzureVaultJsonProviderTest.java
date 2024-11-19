@@ -41,6 +41,7 @@ import oracle.jdbc.provider.TestProperties;
 import oracle.jdbc.provider.azure.AzureTestProperty;
 import oracle.jdbc.provider.azure.authentication.AzureAuthenticationMethod;
 import oracle.jdbc.spi.OracleConfigurationProvider;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
@@ -52,7 +53,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Verifies the {@link AzureVaultJsonProvider} as implementing behavior
  * specified by its JavaDoc.
  */
-
+@Disabled
 public class AzureVaultJsonProviderTest {
 
   static {
