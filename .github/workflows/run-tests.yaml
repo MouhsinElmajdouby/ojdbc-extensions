@@ -30,6 +30,7 @@ jobs:
       - name: Set GCP environment variables
         run : |
           echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/.gcp/config.json" >> $GITHUB_ENV
+          
 
       - name: Prepare certificate and properties files
         run: |
