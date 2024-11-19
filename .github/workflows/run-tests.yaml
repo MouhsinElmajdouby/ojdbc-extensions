@@ -111,7 +111,8 @@ jobs:
           # Generate GCP config
           echo "${{ secrets.TEST_GCP_CONFIG }}" > $HOME/.gcp/config.json
           echo "${{ secrets.GCP_TEST_PROPERTIES }}" > ojdbc-provider-gcp/test.properties
-          echo -e "GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION"=${{ secrets.TEST_GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION}}
+          echo -e "GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION=${{ secrets.TEST_GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION}}\n
+          " >> ojdbc-provider-gcp/test.properties
 
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
