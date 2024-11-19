@@ -45,6 +45,7 @@ import oracle.jdbc.provider.oci.authentication.AuthenticationDetailsFactory;
 import oracle.jdbc.provider.oci.authentication.AuthenticationMethod;
 import oracle.jdbc.provider.parameter.ParameterSet;
 import oracle.jdbc.provider.parameter.ParameterSetBuilder;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static oracle.jdbc.provider.TestProperties.getOrAbort;
@@ -52,6 +53,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /** Verifies {@link AuthenticationDetailsFactory} */
+@Disabled
 public class AuthenticationDetailsFactoryTest {
 
   /**

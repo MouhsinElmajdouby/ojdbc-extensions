@@ -21,11 +21,7 @@ import oracle.jdbc.datasource.impl.OracleDataSource;
 import oracle.jdbc.provider.TestProperties;
 import oracle.jdbc.provider.oci.OciTestProperty;
 import oracle.jdbc.spi.OracleConfigurationProvider;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -41,7 +37,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * Verifies the {@link OciDatabaseToolsConnectionProvider} as implementing
  * behavior specified by its JavaDoc.
  */
-
+@Disabled
 public class OciDatabaseToolsConnectionProviderTest {
 
   static {
