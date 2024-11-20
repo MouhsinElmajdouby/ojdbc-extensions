@@ -49,7 +49,6 @@ import org.junit.jupiter.api.Test;
 
 import static oracle.jdbc.provider.TestProperties.getOrAbort;
 
-@Disabled
 public class AzureVaultSecretProviderTest {
   private static final OracleConfigurationJsonSecretProvider PROVIDER =
     OracleConfigurationJsonSecretProvider.find("azurevault");

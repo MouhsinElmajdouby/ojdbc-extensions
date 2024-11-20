@@ -19,7 +19,6 @@ import java.sql.Statement;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
 class AzureAppConfigurationProviderTest {
 
   /**

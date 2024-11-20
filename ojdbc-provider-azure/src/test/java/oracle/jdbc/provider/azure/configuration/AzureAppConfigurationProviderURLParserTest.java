@@ -68,7 +68,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * Verifies the {@link AzureAppConfigurationProvider} as implementing behavior
  * specified by its JavaDoc.
  */
-@Disabled
 public class AzureAppConfigurationProviderURLParserTest {
   private static OracleConfigurationCache CACHE;
   @BeforeAll

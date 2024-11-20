@@ -53,7 +53,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * Verifies the {@link AzureVaultJsonProvider} as implementing behavior
  * specified by its JavaDoc.
  */
-@Disabled
 public class AzureVaultJsonProviderTest {
 
   static {
