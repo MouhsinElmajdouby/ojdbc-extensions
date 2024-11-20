@@ -37,7 +37,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * Verifies the {@link OciDatabaseToolsConnectionProvider} as implementing
  * behavior specified by its JavaDoc.
  */
-@Disabled
 public class OciDatabaseToolsConnectionProviderTest {
 
   static {
