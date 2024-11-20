@@ -109,7 +109,7 @@ jobs:
           " >> ojdbc-provider-oci/test.properties
 
           # Generate GCP config
-          echo "${{ secrets.TEST_GCP_CONFIG }}" > $HOME/.gcp/config.json
+          echo "${{ secrets.TEST_GCP_CONFIG_BASE64 }}" | base64 -d > $HOME/.gcp/config.json
           echo "${{ secrets.GCP_TEST_PROPERTIES }}" > ojdbc-provider-gcp/test.properties
           echo -e "GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION=${{ secrets.TEST_GCP_SECRET_MANAGER_USERNAME_SECRET_VERSION}}\n
           " >> ojdbc-provider-gcp/test.properties
